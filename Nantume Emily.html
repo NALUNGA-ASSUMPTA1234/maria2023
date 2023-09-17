@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nantume profil</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Nantume Emily </td>
+            <td>nantume.emily@stud.umu.ac.ug</td>
+        </tr>
+        <h1>Person Profiles</h1>
+
+<ul>
+    <li><a href="#" onclick="showProfile('Kassaga John')">Kassaga John</a></li>
+    <li><a href="#" onclick="showProfile('Lubega Sarah')">Lubega Sarah</a></li>
+    <li><a href="#" onclick="showProfile('Sseguya Mike')">Sseguya Mike</a></li>
+    <li><a href="#" onclick="showProfile('Nantume Emily')">Nantume Emily</a></li>
+</ul>
+
+<div id="profile"></div>
+
+<script>
+    function showProfile(name) {
+        var profileDiv = document.getElementById('profile');
+        profileDiv.innerHTML = '<h2>' + name + "'s Profile</h2>" +
+                               '<p>Here is some information about ' + name + '.</p>';
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
